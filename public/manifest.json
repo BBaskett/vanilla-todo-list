@@ -1,6 +1,6 @@
 {
-  "short_name": "Todo",
-  "name": "Todo List",
+  "short_name": "2Do",
+  "name": "2Do List",
   "description": "Create a list of todo items",
   "start_url": ".",
   "icons": [
