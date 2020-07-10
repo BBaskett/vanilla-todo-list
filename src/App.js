@@ -95,14 +95,20 @@ function App() {
   const [inputHasFocus, setInputHasFocus] = React.useState(false);
   const [itemsList, setItemsList] = React.useState([]);
   const [showDeactivated, setShowDeactivated] = React.useState(false);
-  window.onload = () => {
+  /* window.onload = () => {
     if (localStorage && localStorage.getItem("list-items")) {
-      return setItemsList(JSON.parse(localStorage.getItem("list-items")));
+      console.log(localStorage.getItem("list-items"));
+      // setItemsList(JSON.parse(localStorage.getItem("list-items")));
     }
-  };
-  window.onbeforeunload = () => {
+  }; */
+  React.useEffect(() => {
+    if (localStorage && localStorage.getItem("list-items")) {
+      setItemsList(JSON.parse(localStorage.getItem("list-items")));
+    }
+  }, []);
+  React.useEffect(() => {
     return localStorage.setItem("list-items", JSON.stringify(itemsList));
-  };
+  }, [itemsList]);
   function handleUpdate(id, updates) {
     const arrayIndex = itemsList.findIndex((item) => item.id === id);
     return setItemsList([
