@@ -94,7 +94,7 @@ function Todo(props) {
               className={classes.text}
               helperText={`Deleted: ${new Date(
                 props.object.date_deactivated
-              ).toUTCString()}`}
+              ).toString()}`}
               FormHelperTextProps={{ margin: "dense" }}
               variant="outlined"
               defaultValue={props.object.text}
@@ -136,7 +136,7 @@ function Todo(props) {
               className={classes.text}
               helperText={`Last Updated: ${new Date(
                 props.object.date_updated
-              ).toUTCString()}`}
+              ).toString()}`}
               FormHelperTextProps={{ margin: "dense" }}
               variant="outlined"
               defaultValue={props.object.text}

@@ -95,12 +95,6 @@ function App() {
   const [inputHasFocus, setInputHasFocus] = React.useState(false);
   const [itemsList, setItemsList] = React.useState([]);
   const [showDeactivated, setShowDeactivated] = React.useState(false);
-  /* window.onload = () => {
-    if (localStorage && localStorage.getItem("list-items")) {
-      console.log(localStorage.getItem("list-items"));
-      // setItemsList(JSON.parse(localStorage.getItem("list-items")));
-    }
-  }; */
   React.useEffect(() => {
     if (localStorage && localStorage.getItem("list-items")) {
       setItemsList(JSON.parse(localStorage.getItem("list-items")));
