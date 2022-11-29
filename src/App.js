@@ -6,7 +6,7 @@ import Header from "./Components/Header";
 import Todos from "./Components/Todos.js";
 
 // Material UI
-import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 import { makeStyles } from "@material-ui/core/styles";
 import {
   Box,
@@ -21,7 +21,7 @@ import CachedIcon from "@material-ui/icons/Cached";
 import DeleteIcon from "@material-ui/icons/Delete";
 import { grey, green } from "@material-ui/core/colors";
 
-const theme = createMuiTheme({
+const theme = createTheme({
   typography: {
     fontFamily: ["Exo", "sans-serif"].join(","),
   },
