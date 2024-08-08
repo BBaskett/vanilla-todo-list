@@ -1,6 +1,6 @@
 {
-  "name": "todo-list",
-  "version": "1.1.0",
+  "name": "2do-list",
+  "version": "1.0.0",
   "private": true,
   "homepage": "https://bbaskett.github.io/2do-list/",
   "dependencies": {
@@ -12,6 +12,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "5.0.1",
+    "serve": "^14.2.3",
     "uuid": "^8.2.0"
   },
   "scripts": {
