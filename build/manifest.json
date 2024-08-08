@@ -1,0 +1,16 @@
+{
+  "short_name": "2Do",
+  "name": "2Do List",
+  "description": "Create a list of todo items",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "./favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "display": "standalone",
+  "theme_color": "#388e3c",
+  "background_color": "#ffffff"
+}
