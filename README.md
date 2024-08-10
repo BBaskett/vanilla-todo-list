@@ -1,4 +1,4 @@
-### A simple, minimalist todo list.
+# A simple, minimalist todo list.
 
 ![Overview Video](./assets/full_video.gif)
 
